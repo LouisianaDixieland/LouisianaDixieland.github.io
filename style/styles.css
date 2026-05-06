@@ -94,7 +94,7 @@
 
   .hero-tagline {
     position: absolute;
-    left: 0; right: 0; bottom: clamp(24px, 6vh, 60px);
+    left: 0; right: 0; bottom: 13rem;
     text-align: center;
     z-index: 4;
     padding: 0 1.5rem;
@@ -207,6 +207,7 @@
   .panel:first-of-type { padding-top: clamp(40px, 8vh, 100px); }
 
   .panel.dark {
+    opacity: 0.85;
     color: var(--cream);
     padding-left: clamp(20px, 4vw, 48px);
     padding-right: clamp(20px, 4vw, 48px);
@@ -425,7 +426,7 @@
   .reveal { opacity: 0; transform: translateY(30px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.8,.2,1); }
   .reveal.is-in { opacity: 1; transform: translateY(0); }
   .reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
-  .reveal-stagger.is-in > * { opacity: 1; transform: translateY(0); }
+  .reveal-stagger.is-in > * { opacity: 0.85; transform: translateY(0); }
   .reveal-stagger.is-in > *:nth-child(2) { transition-delay: .08s; }
   .reveal-stagger.is-in > *:nth-child(3) { transition-delay: .16s; }
   .reveal-stagger.is-in > *:nth-child(4) { transition-delay: .24s; }
